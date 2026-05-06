@@ -3,12 +3,34 @@
     "title": "Schicksal",
     "subtitle": "Your Trusted Technology Partner"
   },
+  "meta": {
+    "title": "Schicksal - Your IT Doctor",
+    "description": "From IT diagnosis to treatment, Schicksal supports personal IT issues, programming education, web production, software development, and business technology consulting with clear, approachable guidance.",
+    "webDevTitle": "Web & Software Development - Schicksal",
+    "webDevDescription": "Schicksal provides web and software development using Vue.js, Laravel, PHP, and Python to design and build applications tailored to your requirements.",
+    "itConsultingTitle": "IT Consulting - Schicksal",
+    "itConsultingDescription": "Schicksal offers IT consulting and digital transformation support, including IT strategy, networks, software selection, and practical workflow improvements.",
+    "educationTitle": "Education & Training - Schicksal",
+    "educationDescription": "Schicksal provides education and training for students, individuals, and business teams who want to build practical IT and digital skills.",
+    "aboutTitle": "About Us - Schicksal",
+    "aboutDescription": "Learn about Schicksal's business identity, value proposition, target clients, qualifications, and technology consulting background.",
+    "pricingTitle": "Pricing - Schicksal",
+    "pricingDescription": "Review Schicksal's pricing model for development, IT consulting, advisory, and education services, including project-based and hourly engagements.",
+    "privacyTitle": "Privacy Policy - Schicksal",
+    "privacyDescription": "Read Schicksal's privacy policy covering personal information handling, usage purposes, third-party disclosure, and cookie usage.",
+    "termsTitle": "Terms of Service - Schicksal",
+    "termsDescription": "Read Schicksal's terms of service covering usage conditions, prohibited actions, disclaimers, privacy handling, and governing law."
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
     "about": "About",
     "pricing": "Pricing",
     "contact": "Contact"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "services": {
     "title": "Our Services",

@@ -2,6 +2,74 @@
   <div class="legal-page">
     <div class="container">
       <div class="glass-panel content-section">
+        <template v-if="$i18n.locale === 'en'">
+          <h1>Privacy Policy</h1>
+          <p>Schicksal ("we", "our", or "the Company") establishes this Privacy Policy to explain how personal information is handled on this website and in the services provided through it.</p>
+
+          <h2>1. Personal Information</h2>
+          <p>Personal information means information about a living individual that can identify a specific person, including names, dates of birth, addresses, telephone numbers, email addresses, and other identifiers, as well as individually identifiable information under applicable law.</p>
+
+          <h2>2. How We Collect Information</h2>
+          <p>We may ask for personal information when users make inquiries, request services, register for paid services, or otherwise communicate with Schicksal. We may also receive transaction, payment, or contact-related information from partners when necessary to provide our services.</p>
+
+          <h2>3. Purpose of Use</h2>
+          <ol>
+            <li>To provide, operate, and improve our services.</li>
+            <li>To respond to inquiries and confirm user identity when needed.</li>
+            <li>To send notices about service updates, maintenance, important announcements, and related services.</li>
+            <li>To identify users who violate the Terms of Service or attempt improper use.</li>
+            <li>To manage registration information, usage status, billing, and paid services.</li>
+            <li>For purposes reasonably related to the items above.</li>
+          </ol>
+
+          <h2>4. Changes to Purpose of Use</h2>
+          <p>We will change the purpose of use only when the change is reasonably related to the original purpose. Any changed purpose will be announced on this website or notified by an appropriate method.</p>
+
+          <h2>5. Third-Party Disclosure</h2>
+          <p>We will not disclose personal information to third parties without prior user consent except where permitted by law, where necessary to protect life, body, or property, where required for public health or government cooperation, or where business succession or entrusted handling makes disclosure necessary.</p>
+
+          <h2>6. Disclosure, Correction, Suspension, and Deletion</h2>
+          <p>When a user requests disclosure, correction, addition, deletion, suspension of use, or erasure of their personal information, we will review the request and respond appropriately in accordance with applicable laws and our procedures.</p>
+
+          <h2>7. Cookie Policy</h2>
+          <p>Cookies may be used to improve convenience, analyze website usage, improve website performance, and improve our services. Access analysis may use tools such as Google Analytics, and related information may be provided to the tool provider.</p>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Service</strong></td>
+                  <td>Google Analytics</td>
+                </tr>
+                <tr>
+                  <td><strong>Information sent by cookies</strong></td>
+                  <td>System, device, network, communication, location, site or app activity, page browsing data, and user identifiers such as cookies or device identifiers.</td>
+                </tr>
+                <tr>
+                  <td><strong>Recipient</strong></td>
+                  <td>Google LLC and its affiliates</td>
+                </tr>
+                <tr>
+                  <td><strong>Purpose</strong></td>
+                  <td>Analysis of website usage trends and browsing history.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>8. Contact</h2>
+          <ul>
+            <li>Company name: Schicksal</li>
+            <li>Contact: Please contact us through the inquiry form.</li>
+          </ul>
+        </template>
+        <template v-else>
         <h1>プライバシーポリシー</h1>
         <p>Schicksal（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p>
 
@@ -157,6 +225,7 @@
             </tbody>
           </table>
         </div>
+        </template>
       </div>
     </div>
   </div>
