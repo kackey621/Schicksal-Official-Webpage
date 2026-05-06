@@ -1,0 +1,27 @@
+{
+  "name": "Schicksal - ITのお医者さん",
+  "short_name": "Schicksal",
+  "description": "ITの「診断」から「治療」まで。Schicksalは、個人のITトラブルから学生のプログラミング指導、企業のWebサイト制作まで幅広く対応します。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#fe9b35",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

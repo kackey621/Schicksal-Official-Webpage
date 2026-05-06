@@ -2,9 +2,19 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/image/Schicksal.svg" />
-    <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- SVG ファビコン（モダンブラウザ推奨）-->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- PNG ファビコン（フォールバック）-->
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
+    <!-- レガシー互換（IE）-->
     <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- Apple Touch Icon（iOS）-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- Manifest（PWA対応）-->
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- テーマカラー-->
+    <meta name="theme-color" content="#fe9b35" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schicksal - ITのお医者さん</title>
     <meta name="description" content="ITの「診断」から「治療」まで。Schicksalは、個人のITトラブルから学生のプログラミング指導、企業のWebサイト制作まで幅広く対応します。教員免許を持つ専門家が、難しいIT用語を使わず丁寧にサポート。ITのお悩みは、身近なテクノロジーパートナーにご相談ください。" />
@@ -12,16 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEQN07RTXM"></script>
-    <script>
-      globalThis.dataLayer = globalThis.dataLayer || [];
-      function gtag(){globalThis.dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ZEQN07RTXM');
-    </script>
-    <script type="module" crossorigin src="/assets/index-Doqz05H_.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BBbrYU9e.css">
+    <script type="module" crossorigin src="/assets/index-DlPryiQK.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Be7AtuGx.css">
   </head>
   <body>
     <div id="app"></div>
