@@ -10,9 +10,9 @@
       
       <div class="footer-bottom">
         <div class="footer-links">
-          <router-link to="/privacy">プライバシーポリシー</router-link>
+          <router-link to="/privacy">{{ $t('footer.privacy') }}</router-link>
           <span>|</span>
-          <router-link to="/terms">利用規約</router-link>
+          <router-link to="/terms">{{ $t('footer.terms') }}</router-link>
         </div>
         <p>&copy; {{ new Date().getFullYear() }} Schicksal. All rights reserved.</p>
       </div>

@@ -3,12 +3,34 @@
     "title": "Schicksal",
     "subtitle": "信頼されるテクノロジーパートナー"
   },
+  "meta": {
+    "title": "Schicksal - ITのお医者さん",
+    "description": "ITの「診断」から「治療」まで。Schicksalは、個人のITトラブルから学生のプログラミング指導、企業のWebサイト制作まで幅広く対応します。教員免許を持つ専門家が、難しいIT用語を使わず丁寧にサポートします。",
+    "webDevTitle": "ウェブ・ソフトウェア開発 - Schicksal",
+    "webDevDescription": "Schicksalのウェブ・ソフトウェア開発サービス。Vue.js、Laravel、PHP、Pythonを活用し、要件に合わせたWebアプリケーションを設計・開発します。",
+    "itConsultingTitle": "ITコンサルティング - Schicksal",
+    "itConsultingDescription": "SchicksalのITコンサルティング・DX支援。IT戦略、ネットワーク、ソフトウェア選定、業務改善をわかりやすく支援します。",
+    "educationTitle": "教育・トレーニング - Schicksal",
+    "educationDescription": "Schicksalの教育・トレーニングサービス。学生、個人、ビジネスチーム向けにITとデジタルスキルの学習を支援します。",
+    "aboutTitle": "私たちについて - Schicksal",
+    "aboutDescription": "Schicksalの事業概要、提供価値、対象クライアント、資格・経験をご紹介します。",
+    "pricingTitle": "料金体系 - Schicksal",
+    "pricingDescription": "Schicksalの料金体系。開発、ITコンサルティング、教育サービスに応じたプロジェクトベース料金と時間制料金をご案内します。",
+    "privacyTitle": "プライバシーポリシー - Schicksal",
+    "privacyDescription": "Schicksalのプライバシーポリシー。個人情報の取扱い、利用目的、第三者提供、クッキーの利用について説明します。",
+    "termsTitle": "利用規約 - Schicksal",
+    "termsDescription": "Schicksalの利用規約。サービス利用条件、禁止事項、免責事項、個人情報の取扱い、準拠法について説明します。"
+  },
   "nav": {
     "home": "ホーム",
     "services": "事業概要",
     "about": "私たちについて",
     "pricing": "料金体系",
     "contact": "お問い合わせ"
+  },
+  "footer": {
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
   },
   "services": {
     "title": "事業概要",

@@ -2,6 +2,59 @@
   <div class="legal-page">
     <div class="container">
       <div class="glass-panel content-section">
+        <template v-if="$i18n.locale === 'en'">
+          <h1>Terms of Service</h1>
+          <p>These Terms of Service ("Terms") define the conditions for using the services provided by Schicksal ("the Company") through this website. Users shall use the services in accordance with these Terms.</p>
+
+          <h2>1. Scope</h2>
+          <ol>
+            <li>These Terms apply to all relationships between users and the Company concerning the services.</li>
+            <li>Any additional rules or individual provisions announced by the Company form part of these Terms.</li>
+            <li>If individual provisions conflict with these Terms, the individual provisions prevail unless otherwise specified.</li>
+          </ol>
+
+          <h2>2. Registration</h2>
+          <p>Registration is completed when an applicant agrees to these Terms, applies by the method specified by the Company, and the Company approves the application. The Company may reject an application if false information is provided, if the applicant previously violated these Terms, or if the Company otherwise determines that registration is inappropriate.</p>
+
+          <h2>3. User ID and Password Management</h2>
+          <p>Users are responsible for properly managing their user IDs and passwords. Users may not transfer, lend, or share them with third parties. The Company may treat use with matching credentials as use by the registered user.</p>
+
+          <h2>4. Fees and Payment</h2>
+          <p>For paid services, users shall pay the fees displayed on this website or otherwise specified by the Company using the payment method designated by the Company. Late payments may be subject to delay damages.</p>
+
+          <h2>5. Prohibited Actions</h2>
+          <ul>
+            <li>Actions that violate laws, regulations, or public order and morals.</li>
+            <li>Criminal acts or acts related to criminal activity.</li>
+            <li>Infringement of copyrights, trademarks, or other intellectual property rights.</li>
+            <li>Interference with servers, networks, service operation, or other users.</li>
+            <li>Unauthorized access or attempted unauthorized access.</li>
+            <li>Collection or accumulation of personal information about other users.</li>
+            <li>Impersonation, improper advertising, solicitation, or use for improper purposes.</li>
+            <li>Providing benefits to antisocial forces or any action the Company deems inappropriate.</li>
+          </ul>
+
+          <h2>6. Suspension and Restriction</h2>
+          <p>The Company may suspend or interrupt all or part of the services without prior notice when maintenance, system failure, natural disaster, force majeure, or other operational difficulty occurs. The Company may also restrict use or delete registration when a user violates these Terms or is otherwise deemed inappropriate.</p>
+
+          <h2>7. Disclaimer</h2>
+          <p>The Company does not warrant that the services are free from defects in fact or law, including safety, reliability, accuracy, completeness, effectiveness, fitness for a particular purpose, security, errors, bugs, or rights infringement. The Company is not responsible for damages arising from the services except where caused by intentional act or gross negligence, and subject to applicable consumer protection laws.</p>
+
+          <h2>8. Changes to Services and Terms</h2>
+          <p>The Company may change, add, or discontinue service content with prior notice. The Company may change these Terms without individual consent when the change conforms to users' general interests or is reasonable in light of the purpose of the service agreement.</p>
+
+          <h2>9. Privacy</h2>
+          <p>Personal information obtained through use of the services will be handled appropriately in accordance with the Company's Privacy Policy.</p>
+
+          <h2>10. Governing Law and Jurisdiction</h2>
+          <ol>
+            <li>These Terms are governed by the laws of Japan.</li>
+            <li>Any dispute concerning the services shall be subject to the exclusive jurisdiction of the court having jurisdiction over the Company's head office location.</li>
+          </ol>
+
+          <p class="footer-note">End</p>
+        </template>
+        <template v-else>
         <h1>利用規約</h1>
         <p>この利用規約（以下，「本規約」といいます。）は，Schicksal（以下，「当社」といいます。）がこのウェブサイト上で提供するサービス（以下，「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーの皆さま（以下，「ユーザー」といいます。）には，本規約に従って，本サービスをご利用いただきます。</p>
 
@@ -126,6 +179,7 @@
         </ol>
 
         <p class="footer-note">以上</p>
+        </template>
       </div>
     </div>
   </div>
