@@ -1,3 +1,14 @@
+<heade>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEQN07RTXM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZEQN07RTXM');
+  </script>
+</heade>
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue'
 import gsap from 'gsap'

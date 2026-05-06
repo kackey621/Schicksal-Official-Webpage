@@ -7,6 +7,7 @@ import ITConsulting from '../views/ITConsulting.vue'
 import Education from '../views/Education.vue'
 import PrivacyPolicy from '../views/PrivacyPolicy.vue'
 import TermsOfService from '../views/TermsOfService.vue'
+import AssetsView from '../views/AssetsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/terms',
       name: 'terms',
       component: TermsOfService
+    },
+     {
+      path: '/assets/:pathMatch(.*)*',
+      name: 'assets',
+      component: AssetsView
     }
   ],
   scrollBehavior(_to, _from, savedPosition) {
