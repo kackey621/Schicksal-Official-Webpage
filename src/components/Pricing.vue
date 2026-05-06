@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { tm } = useI18n()
+const getItems = (key: string): any[] => tm(key) as any[]
 </script>
 
 <template>
@@ -10,7 +13,7 @@
         <p class="pricing-desc">{{ $t('pricing.desc') }}</p>
         
         <div class="pricing-grid">
-          <div class="pricing-card" v-for="(item, index) in $tm('pricing.items')" :key="index">
+          <div class="pricing-card" v-for="(item, index) in getItems('pricing.items')" :key="index">
             <div class="card-header">
               <h3>{{ item.type }}</h3>
             </div>

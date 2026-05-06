@@ -1,5 +1,7 @@
 <script setup lang="ts">
-// About section setup
+import { useI18n } from 'vue-i18n'
+const { tm } = useI18n()
+const getItems = (key: string): any[] => tm(key) as any[]
 </script>
 
 <template>
@@ -44,7 +46,7 @@
       <div class="glass-panel subsection">
         <h3>{{ $t('about.identity.title') }}</h3>
         <div class="identity-table">
-          <div class="identity-row" v-for="(item, index) in $tm('about.identity.items')" :key="index">
+          <div class="identity-row" v-for="(item, index) in getItems('about.identity.items')" :key="index">
             <div class="identity-label">{{ item.label }}</div>
             <div class="identity-value">{{ item.value }}</div>
           </div>
@@ -56,7 +58,7 @@
         <h3>{{ $t('about.coreValues.title') }}</h3>
         <p>{{ $t('about.coreValues.desc') }}</p>
         <ul class="value-list">
-          <li v-for="(item, index) in $tm('about.coreValues.list')" :key="index">{{ item }}</li>
+          <li v-for="(item, index) in getItems('about.coreValues.list')" :key="index">{{ item }}</li>
         </ul>
         <p class="conclusion">{{ $t('about.coreValues.conclusion') }}</p>
       </div>
@@ -66,7 +68,7 @@
         <h3>{{ $t('about.targetClients.title') }}</h3>
         <p>{{ $t('about.targetClients.desc') }}</p>
         <div class="client-grid">
-          <div class="client-card" v-for="(item, index) in $tm('about.targetClients.items')" :key="index">
+          <div class="client-card" v-for="(item, index) in getItems('about.targetClients.items')" :key="index">
             <h4>{{ item.client }}</h4>
             <p>{{ item.support }}</p>
           </div>
@@ -88,19 +90,19 @@
           <div class="qual-card">
             <h4>{{ $t('about.qualifications.tech.title') }}</h4>
             <ul>
-              <li v-for="(item, index) in $tm('about.qualifications.tech.items')" :key="index">{{ item }}</li>
+              <li v-for="(item, index) in getItems('about.qualifications.tech.items')" :key="index">{{ item }}</li>
             </ul>
           </div>
           <div class="qual-card">
             <h4>{{ $t('about.qualifications.teaching.title') }}</h4>
             <ul>
-              <li v-for="(item, index) in $tm('about.qualifications.teaching.items')" :key="index">{{ item }}</li>
+              <li v-for="(item, index) in getItems('about.qualifications.teaching.items')" :key="index">{{ item }}</li>
             </ul>
           </div>
           <div class="qual-card">
             <h4>{{ $t('about.qualifications.experience.title') }}</h4>
             <ul>
-              <li v-for="(item, index) in $tm('about.qualifications.experience.items')" :key="index">{{ item }}</li>
+              <li v-for="(item, index) in getItems('about.qualifications.experience.items')" :key="index">{{ item }}</li>
             </ul>
           </div>
         </div>
