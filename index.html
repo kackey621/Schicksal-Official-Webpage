@@ -2,9 +2,19 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/image/Schicksal.svg" />
-    <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- SVG ファビコン（モダンブラウザ推奨）-->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- PNG ファビコン（フォールバック）-->
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
+    <!-- レガシー互換（IE）-->
     <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- Apple Touch Icon（iOS）-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- Manifest（PWA対応）-->
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- テーマカラー-->
+    <meta name="theme-color" content="#fe9b35" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schicksal - ITのお医者さん</title>
     <meta name="description" content="ITの「診断」から「治療」まで。Schicksalは、個人のITトラブルから学生のプログラミング指導、企業のWebサイト制作まで幅広く対応します。教員免許を持つ専門家が、難しいIT用語を使わず丁寧にサポート。ITのお悩みは、身近なテクノロジーパートナーにご相談ください。" />
