@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "Your IT Specialist",
+    "subtitle": "Your Trusted Technology Partner"
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "webDev": {
+      "title": "Web & Software Development",
+      "desc": "Custom web applications and software solutions tailored to each client's business requirements."
+    },
+    "itConsulting": {
+      "title": "IT Consulting & Digital Transformation",
+      "desc": "Strategic advisory and hands-on implementation support for businesses looking to modernize their technology infrastructure."
+    },
+    "education": {
+      "title": "Education & Training",
+      "desc": "Structured technology education, software training sessions and digital skills coaching."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "mission": "To help individuals, small businesses, and startups harness the power of information technology — regardless of the size or complexity of their needs.",
+    "description": "Just as a medical doctor diagnoses and treats health issues at any severity level, Your IT Specialist provides expert guidance and hands-on support for everything from small day-to-day IT problems to large-scale digital transformation projects.",
+    "qualifications": {
+      "title": "Qualifications & Background",
+      "tech": "Vue.js, Laravel (PHP), FastAPI, Flask",
+      "teaching": "Licensed teacher in Information Technology and Social Studies",
+      "experience": "Teaching experience from junior high to university, IT consulting for startups"
+    }
+  },
+  "contact": {
+    "cta": "Ready to work with Your IT Specialist?",
+    "button": "Get in Touch"
+  }
+}
