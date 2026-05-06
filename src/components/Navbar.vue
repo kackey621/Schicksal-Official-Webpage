@@ -45,14 +45,25 @@ const toggleLanguage = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  gap: 1.5rem;
+  padding: 0.9rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
 }
 
+.logo {
+  flex: 0 0 auto;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
 .logo-img {
-  height: 40px;
-  width: 150px;
+  width: clamp(112px, 16vw, 150px);
+  height: auto;
+  aspect-ratio: 15 / 4;
   background-color: var(--heading-color);
   -webkit-mask-image: url('/Logo.png');
   -webkit-mask-size: contain;
@@ -75,12 +86,17 @@ const toggleLanguage = () => {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  min-width: 0;
 }
 
 .nav-links a {
   color: var(--text-color);
   font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+  white-space: nowrap;
   transition: color 0.3s ease;
 }
 
@@ -91,8 +107,12 @@ const toggleLanguage = () => {
 .nav-contact-btn {
   background: var(--primary-color);
   color: white !important;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -108,11 +128,19 @@ const toggleLanguage = () => {
   background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
   border: none;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  min-height: 40px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
   cursor: pointer;
   font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1;
   font-weight: 600;
+  white-space: nowrap;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(255, 126, 103, 0.2);
 }
@@ -120,5 +148,101 @@ const toggleLanguage = () => {
 .lang-switch:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(255, 126, 103, 0.4);
+}
+
+@media (max-width: 900px) {
+  .nav-container {
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.92rem;
+  }
+
+  .nav-contact-btn,
+  .lang-switch {
+    min-height: 36px;
+  }
+
+  .nav-contact-btn {
+    padding: 0.45rem 0.95rem;
+  }
+
+  .lang-switch {
+    min-width: 48px;
+    padding: 0.45rem 0.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .logo-img {
+    width: 116px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    overflow-x: auto;
+    padding-bottom: 0.15rem;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 0.88rem;
+  }
+
+  .nav-contact-btn,
+  .lang-switch {
+    flex: 0 0 auto;
+    min-height: 34px;
+  }
+
+  .nav-contact-btn {
+    padding: 0.4rem 0.85rem;
+  }
+
+  .lang-switch {
+    min-width: 46px;
+    padding: 0.4rem 0.75rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-container {
+    padding-inline: 0.75rem;
+  }
+
+  .logo-img {
+    width: 104px;
+  }
+
+  .nav-links {
+    gap: 0.65rem;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+  }
+
+  .nav-contact-btn {
+    padding-inline: 0.75rem;
+  }
 }
 </style>
