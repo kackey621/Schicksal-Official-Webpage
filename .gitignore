@@ -1,2 +1,5 @@
 dist/.DS_Store
 node_module/*
+.DS_Store
+source/MyProfile_EN.md
+source/MyProfile_JA.md
