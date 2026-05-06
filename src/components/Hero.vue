@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import gsap from 'gsap'
+import { useI18n } from 'vue-i18n'
 
-const titleRef = ref(null)
-const subtitleRef = ref(null)
+const { locale } = useI18n()
+
+const imageRef = ref(null)
+
+const heroImageSrc = computed(() => {
+  return locale.value === 'en' ? '/image/HEADER_EN.png' : '/image/HEADER_JA.png'
+})
 
 onMounted(() => {
-  gsap.fromTo(titleRef.value, 
+  gsap.fromTo(imageRef.value, 
     { y: 50, opacity: 0 }, 
     { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
-  )
-  gsap.fromTo(subtitleRef.value, 
-    { y: 30, opacity: 0 }, 
-    { y: 0, opacity: 1, duration: 1, delay: 0.3, ease: 'power3.out' }
   )
 })
 </script>
@@ -24,10 +26,8 @@ onMounted(() => {
       <div class="circle circle-2"></div>
     </div>
     
-    <div class="content glass-panel">
-      <h1 ref="titleRef">{{ $t('hero.title') }}</h1>
-      <p ref="subtitleRef">{{ $t('hero.subtitle') }}</p>
-      <a href="#services" class="cta-button">Explore Services</a>
+    <div class="content">
+      <img ref="imageRef" :src="heroImageSrc" alt="Hero Image" class="hero-image" />
     </div>
   </section>
 </template>
@@ -40,7 +40,7 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 2rem;
+  padding: 0; /* Remove padding to allow 100% width */
 }
 
 .background-elements {
@@ -85,39 +85,13 @@ onMounted(() => {
 
 .content {
   text-align: center;
-  padding: 4rem 3rem;
-  max-width: 800px;
+  width: 100%;
+  /* Removed max-width and padding for full width image */
 }
 
-h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-p {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  color: var(--text-color);
-  margin-bottom: 2.5rem;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #fff;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-  border-radius: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(66, 211, 146, 0.3);
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 </style>

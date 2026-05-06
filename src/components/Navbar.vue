@@ -12,10 +12,15 @@ const toggleLanguage = () => {
   <header class="navbar glass-panel">
     <div class="nav-container">
       <div class="logo">
-        <span class="brand">Your IT Specialist</span>
+        <router-link to="/" class="logo-link">
+          <div class="logo-img" aria-label="Schicksal Logo"></div>
+        </router-link>
       </div>
       <nav class="nav-links">
-        <a href="#services">{{ t('nav.services') }}</a>
+        <router-link to="/">{{ t('nav.home') || 'Home' }}</router-link>
+        <router-link to="/about">{{ t('nav.about') }}</router-link>
+        <router-link to="/pricing">{{ t('nav.pricing') }}</router-link>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScImgpsCYS1sPf0OVpRUEgOpsG5Rz32zQzh8j76Q20xhQ1jBQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="nav-contact-btn">{{ t('nav.contact') }}</a>
         <button @click="toggleLanguage" class="lang-switch">
           {{ locale === 'en' ? '日本語' : 'EN' }}
         </button>
@@ -28,7 +33,7 @@ const toggleLanguage = () => {
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 9999;
   border-radius: 0;
   border-left: none;
   border-right: none;
@@ -44,12 +49,26 @@ const toggleLanguage = () => {
   margin: 0 auto;
 }
 
-.brand {
-  font-weight: 700;
-  font-size: 1.5rem;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo-img {
+  height: 40px;
+  width: 150px;
+  background-color: var(--heading-color);
+  -webkit-mask-image: url('/Logo.png');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-image: url('/Logo.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: left center;
+  display: block;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 10000;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -68,9 +87,25 @@ const toggleLanguage = () => {
   color: var(--primary-color);
 }
 
+.nav-contact-btn {
+  background: var(--primary-color);
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-contact-btn:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 126, 103, 0.3);
+}
+
 .lang-switch {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  border: none;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -78,10 +113,11 @@ const toggleLanguage = () => {
   font-family: inherit;
   font-weight: 600;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 126, 103, 0.2);
 }
 
 .lang-switch:hover {
-  background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 126, 103, 0.4);
 }
 </style>

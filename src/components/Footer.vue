@@ -3,18 +3,18 @@
     <div class="container">
       <div class="footer-content">
         <div class="brand-section">
-          <h2 class="brand">Your IT Specialist</h2>
+          <h2 class="brand">Schicksal</h2>
           <p>{{ $t('hero.subtitle') }}</p>
-        </div>
-        
-        <div class="cta-section">
-          <h3>{{ $t('contact.cta') }}</h3>
-          <button class="cta-button">{{ $t('contact.button') }}</button>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; {{ new Date().getFullYear() }} Your IT Specialist. All rights reserved.</p>
+        <div class="footer-links">
+          <router-link to="/privacy">プライバシーポリシー</router-link>
+          <span>|</span>
+          <router-link to="/terms">利用規約</router-link>
+        </div>
+        <p>&copy; {{ new Date().getFullYear() }} Schicksal. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -22,9 +22,9 @@
 
 <style scoped>
 .footer {
-  background: #090c10;
+  background: var(--card-bg);
   padding: 4rem 2rem 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid var(--card-border);
 }
 
 .container {
@@ -44,7 +44,7 @@
 .brand {
   font-weight: 700;
   font-size: 2rem;
-  background: linear-gradient(90deg, #42d392, #647eff);
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
@@ -55,33 +55,37 @@
   font-size: 1.1rem;
 }
 
-.cta-section h3 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.cta-button {
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #fff;
-  background: var(--secondary-color);
-  border-radius: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(100, 126, 255, 0.3);
-}
-
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-bottom p {
   color: #6e7681;
   font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #6e7681;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 </style>

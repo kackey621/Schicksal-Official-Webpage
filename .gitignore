@@ -1,6 +1,9 @@
-dist/.DS_Store
-
+node_modules
+dist
+.DS_Store
+.claude/worktrees/
 MyProfile_EN.md
 MyProfile_JA.md
-
-.claude/worktrees/
+.env
+.env.*
+!.env.example

@@ -1,9 +1,10 @@
 {
   "hero": {
-    "title": "Your IT Specialist",
+    "title": "Schicksal",
     "subtitle": "Your Trusted Technology Partner"
   },
   "nav": {
+    "home": "Home",
     "services": "Services",
     "about": "About",
     "pricing": "Pricing",
@@ -11,32 +12,153 @@
   },
   "services": {
     "title": "Our Services",
+    "readMore": "Learn More",
+    "close": "Close",
     "webDev": {
       "title": "Web & Software Development",
-      "desc": "Custom web applications and software solutions tailored to each client's business requirements."
+      "desc": "Custom web applications and software solutions tailored to each client's business requirements.",
+      "details": [
+        "Custom Web Application Development (Frontend & Backend)",
+        "Vue.js — Modern, reactive user interface development",
+        "Laravel (PHP) — Robust, enterprise-ready backend framework",
+        "Standard PHP — Lightweight and flexible server-side scripting",
+        "Python (FastAPI) — High-performance API development",
+        "Python (Flask) — Lightweight web application framework",
+        "Database design, API integration, and deployment support",
+        "Ongoing maintenance and technical support for production apps"
+      ],
+      "pricing": "Project-based fee (custom quote per project)"
     },
     "itConsulting": {
       "title": "IT Consulting & Digital Transformation",
-      "desc": "Strategic advisory and hands-on implementation support for businesses looking to modernize their technology infrastructure."
+      "desc": "Strategic advisory and hands-on implementation support for businesses looking to modernize their technology infrastructure.",
+      "details": [
+        "IT Strategy consulting and technology roadmap planning",
+        "Digital Transformation planning and implementation support",
+        "Network design, configuration, and optimization",
+        "ISP and mobile/phone carrier evaluation and optimization",
+        "Software selection and procurement advisory",
+        "System integration and workflow automation consulting",
+        "General IT problem resolution and troubleshooting",
+        "Technology onboarding for new businesses and startups"
+      ],
+      "pricing": "Project-based fee for strategy; Hourly rate for on-spot advisory"
     },
     "education": {
-      "title": "Education & Training",
-      "desc": "Structured technology education, software training sessions and digital skills coaching."
+      "title": "Education & Training (Coming Soon)",
+      "desc": "Structured technology education, software training sessions and digital skills coaching.",
+      "details": [
+        "Individual & group software training sessions",
+        "Digital skills coaching for non-technical users",
+        "IT instruction for junior high students",
+        "IT instruction for senior high students",
+        "IT support and tutoring for university students",
+        "Social Studies instruction (Licensed teacher, Japanese curriculum)",
+        "Career guidance for technology fields",
+        "Business team upskilling and software training"
+      ],
+      "pricing": "Hourly rate (structured per session or per course package)"
     }
   },
   "about": {
     "title": "About Us",
     "mission": "To help individuals, small businesses, and startups harness the power of information technology — regardless of the size or complexity of their needs.",
-    "description": "Just as a medical doctor diagnoses and treats health issues at any severity level, Your IT Specialist provides expert guidance and hands-on support for everything from small day-to-day IT problems to large-scale digital transformation projects.",
+    "description": "Just as a medical doctor diagnoses and treats health issues at any severity level, Schicksal provides expert guidance and hands-on support for everything from small day-to-day IT problems to large-scale digital transformation projects. Clients benefit from a single trusted partner who can advise, implement, and teach.",
+    "identity": {
+      "title": "Business Identity",
+      "items": [
+        { "label": "Business Name", "value": "Schicksal" },
+        { "label": "Brand Tagline", "value": "Your Trusted Technology Partner" },
+        { "label": "Business Type", "value": "Independent IT Consulting & Services" },
+        { "label": "Operation Model", "value": "Solo Consultant" },
+        { "label": "Target Clients", "value": "Small Businesses, Startups, Individuals, Students" },
+        { "label": "Industries Served", "value": "All industries — sector-agnostic" },
+        { "label": "Service Model", "value": "Project-based, Hourly Advisory, and Hourly Education" }
+      ]
+    },
+    "coreValues": {
+      "title": "Core Value Proposition",
+      "desc": "Schicksal offers a uniquely broad and integrated service model. Most IT service providers specialize in either development, consulting, or training; however, Schicksal delivers all three under one roof, creating a seamless experience for clients who need:",
+      "list": [
+        "A website or web application built from scratch",
+        "Guidance on choosing the right technology stack or service provider",
+        "Support setting up or optimizing network infrastructure",
+        "Staff or personal training on software tools and IT best practices",
+        "Strategic advice on digital transformation and modernization"
+      ],
+      "conclusion": "This integrated approach eliminates the overhead of managing multiple vendors and ensures consistency across all technology decisions."
+    },
+    "products": {
+      "title": "Upcoming Products",
+      "desc": "Schicksal has an active product development department focused on moving from purely service-based delivery to scalable software products. New digital tools and solutions are currently in development, and an official announcement is coming soon.",
+      "status": "🚀 Products — Launching Soon",
+      "details": "Our product department is already established and actively working on new digital tools and solutions. Official product announcements will be made shortly. Please follow our website and social media for the latest updates."
+    },
+    "targetClients": {
+      "title": "Target Clients & Ideal Use Cases",
+      "desc": "Schicksal primarily serves the following types of clients:",
+      "items": [
+        { "client": "Small Businesses", "support": "Network setup, software selection, web presence, digital modernization." },
+        { "client": "Startups", "support": "Tech stack decisions, MVP development, IT infrastructure from scratch." },
+        { "client": "Individuals", "support": "Personal IT support, software coaching, career guidance in tech." },
+        { "client": "Students (Jr/Sr High)", "support": "IT and social studies tutoring, exam preparation." },
+        { "client": "University Students", "support": "IT tutoring support, project assistance." },
+        { "client": "Non-technical Owners", "support": "Plain-language IT advice, vendor selection, training." }
+      ]
+    },
+    "industries": {
+      "title": "Industries Served",
+      "desc": "Schicksal is proudly sector-agnostic. We serve clients across all industries, including retail, hospitality, healthcare administration, education, e-commerce, and non-profit organizations. Technology challenges are universal, and so is our support."
+    },
     "qualifications": {
       "title": "Qualifications & Background",
-      "tech": "Vue.js, Laravel (PHP), FastAPI, Flask",
-      "teaching": "Licensed teacher in Information Technology and Social Studies",
-      "experience": "Teaching experience from junior high to university, IT consulting for startups"
+      "desc": "The Schicksal consultant brings a powerful combination of technical expertise, teaching credentials, and real-world project experience.",
+      "tech": {
+        "title": "Technical Skills",
+        "items": [
+          "Frontend Development: Vue.js",
+          "Backend Development: Laravel (PHP), Standard PHP",
+          "API & Python Development: FastAPI, Flask",
+          "Network configuration and infrastructure design",
+          "IT system design and integration"
+        ]
+      },
+      "teaching": {
+        "title": "Teaching Credentials & Experience",
+        "items": [
+          "Licensed teacher in Social Studies (Japanese curriculum)",
+          "Licensed teacher in Information Technology",
+          "Teaching experience at the junior high school level",
+          "Teaching experience at the senior high school level",
+          "Learning support experience at the university level"
+        ]
+      },
+      "experience": {
+        "title": "Consulting Experience",
+        "items": [
+          "IT consulting for small businesses and startups",
+          "Digital transformation advisory and implementation support",
+          "Network provider selection and configuration projects",
+          "End-to-end web application development projects"
+        ]
+      }
     }
   },
+  "pricing": {
+    "title": "Pricing Model",
+    "desc": "Schicksal offers flexible pricing models designed to accommodate different types of engagements:",
+    "items": [
+      { "type": "Web & App Development", "model": "Project-based fee", "notes": "Custom quote based on scope, complexity, and timeline." },
+      { "type": "IT Consulting (Strategic)", "model": "Project-based fee", "notes": "Scoped per engagement; includes deliverables and milestones." },
+      { "type": "IT Advisory (On-demand)", "model": "Hourly rate", "notes": "For quick consultations or ad-hoc troubleshooting." },
+      { "type": "Education & Tutoring", "model": "Hourly rate", "notes": "Individual or group sessions; packages available soon." }
+    ],
+    "conclusion": "For all project-based engagements, Schicksal will provide a detailed proposal and quote before work begins. Clients can expect complete transparency regarding pricing, timelines, and deliverables."
+  },
   "contact": {
-    "cta": "Ready to work with Your IT Specialist?",
+    "title": "Contact & Next Steps",
+    "desc": "Schicksal is currently accepting new clients for web development projects, IT consulting, and educational sessions. Reach out via the website for inquiries, project quotes, or to book an initial consultation.",
+    "cta": "Ready to work with Schicksal?\nWhether you have a small IT question or a large project in mind, we are ready to help.\nReach out to us today.",
     "button": "Get in Touch"
   }
 }

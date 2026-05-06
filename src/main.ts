@@ -5,6 +5,7 @@ import { createI18n } from 'vue-i18n'
 
 import en from './locales/en.json'
 import ja from './locales/ja.json'
+import router from './router'
 
 const i18n = createI18n({
   legacy: false,
@@ -18,4 +19,5 @@ const i18n = createI18n({
 
 const app = createApp(App)
 app.use(i18n)
+app.use(router)
 app.mount('#app')
