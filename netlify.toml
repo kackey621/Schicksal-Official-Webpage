@@ -26,3 +26,9 @@ for = "/*.html"
 
 [headers.values]
 Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+for = "/Schicksal.svg"
+
+[headers.values]
+Content-Disposition = "attachment; filename=\"Schicksal.svg\""
